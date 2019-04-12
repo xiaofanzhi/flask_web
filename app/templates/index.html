@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>登录</title>
+{% endblock title %}
+
+{% block head %}
+{{super()}}
+{% endblock head %}
+
+
+{% block body %}
+{{ super() }}
+
+
+<h1>Internship Sign In & Sign Up Form</h1>
+<div class="main-agileits">
+<!--form-stars-here-->
+		<div class="form-w3-agile">
+			<h2 class="sub-agileits-w3layouts">Sign In</h2>
+			<form action="#" method="post">
+					<input type="email" name="Eamil" placeholder="Email" required="" />
+					<input type="password" name="Password" placeholder="Password" required="" />
+					<a href="#" class="forgot-w3layouts">Forgot Password ?</a>
+				<div class="submit-w3l">
+					<input type="submit" value="Sign in">
+				</div>
+				<p class="p-bottom-w3ls"><a href="signup.html">Sign Up here</a>if u do not have an account yet.</p>
+			</form>
+		</div>
+		</div>
+<!--//form-ends-here-->
+<!-- copyright -->
+{% block copyright %}
+    {{ super() }}
+{% endblock copyright %}
+
+{% endblock body %}

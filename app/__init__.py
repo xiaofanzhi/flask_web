@@ -1,6 +1,6 @@
 
 from flask import Flask
-
+from app.models.base import db
 
 
 def creat_app():
@@ -9,7 +9,9 @@ def creat_app():
     app.config.from_object('app.setting')
 
     register_blueprint(app)
-
+    # 数据库 插件
+    db.init_app(app)
+    db.create_all(app=app)
 
     return app
 
