@@ -18,3 +18,5 @@ mysql 配置文件卸载secure配置文件中,没有上传需要自己手动创�
 
 限制登录权限
 
+flask 集合Flask-Admin插件
+
