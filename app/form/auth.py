@@ -20,3 +20,12 @@ class RegisterForm(Form):
     def validate_nick_name(self, field):
         if User.query.filter_by(nick_name =field.data).first():
             raise ValidationError('昵称存在')
+
+
+class LoginForm(Form):
+    email = StringField(validators=[DataRequired(),Length(3,64),Email(message='电子邮件格式错误')])
+    password = PasswordField(validators=[DataRequired(message='密码不能为空'), Length(1, 128)])
+
+
+
+
