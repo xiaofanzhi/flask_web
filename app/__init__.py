@@ -2,6 +2,8 @@
 from flask import Flask
 from app.models.base import db
 from flask_login import LoginManager
+from flask_babelex import Babel
+
 
 login_manager = LoginManager()
 
@@ -21,6 +23,13 @@ def creat_app():
     # 没登录，将其引导到登录页面
     login_manager.login_view = 'web.login'
     login_manager.login_message='请先登录'
+
+    # admin 注册
+    from .admin import admin
+    admin.init_app(app)
+    # 汉化
+    babel = Babel(app)
+    babel.init_app(app)
 
 
 

@@ -11,6 +11,8 @@ flask-sqlalchemy = "*"
 cymysql = "*"
 wtforms = "*"
 flask-login = "*"
+flask-admin = "*"
+flask-babelex = "*"
 
 [requires]
 python_version = "3.6"
