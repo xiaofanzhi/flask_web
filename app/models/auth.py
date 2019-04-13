@@ -13,7 +13,7 @@ class User(UserMixin,Base):
     nick_name = Column(String(64),nullable=False)
     email = Column(String(51), unique=True, nullable=False)
     _password = Column('password', String(500))
-    content = Column(Text,nullable=False)
+    content = Column(Text)
     phone_number = Column(String(18), unique=True)
 
     # admin用
