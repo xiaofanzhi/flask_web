@@ -12,6 +12,7 @@ mysql 配置文件卸载secure配置文件中,没有上传需要自己手动创�
 
 注册验证完成 
 
+
 ##4.13 实现登录 
 
 采用flask第三方登录插件flask_login
@@ -19,6 +20,7 @@ mysql 配置文件卸载secure配置文件中,没有上传需要自己手动创�
 限制登录权限
 
 flask 整合Flask-Admin插件
+
 
 ###整合Flask-Migrate
 
@@ -29,6 +31,9 @@ flask 整合Flask-Admin插件
 迁移:flask db migrate
 
 升级:flask db upgrade
+
+
+
 
 ###Flask-Admin中整合editor.md Markdown
 editor.md:[editor.md](https://github.com/pandao/editor.md)Markdown编辑器
