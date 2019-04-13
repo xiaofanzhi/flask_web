@@ -1,1 +1,3 @@
 BABEL_DEFAULT_LOCALE = 'zh_CN'
+
+SAVEPIC='app/upload/'

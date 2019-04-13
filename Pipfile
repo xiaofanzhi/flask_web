@@ -14,6 +14,10 @@ flask-login = "*"
 flask-admin = "*"
 flask-babelex = "*"
 flask-migrate = "*"
+editor-md = "*"
+markdown = "*"
+flask-markdown = "*"
+bleach = "*"
 
 [requires]
 python_version = "3.6"

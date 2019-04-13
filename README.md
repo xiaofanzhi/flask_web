@@ -20,18 +20,26 @@ mysql 配置文件卸载secure配置文件中,没有上传需要自己手动创�
 
 flask 整合Flask-Admin插件
 
-整合Flask-Migrate
+###整合Flask-Migrate
+
 命令：export FLASK_APP=test.py （选定当前运行为test.py）
 
-初始化
+初始化:flask db init
 
-flask db init
+迁移:flask db migrate
 
-迁移
+升级:flask db upgrade
 
-flask db migrate
+###Flask-Admin中整合editor.md Markdown
+editor.md:[editor.md](https://github.com/pandao/editor.md)Markdown编辑器
 
-升级
+- 最后的回调URL 要注册在web蓝图下面，  @web.route('/image/<name>')
+之前是放在@expose admin下面，图片是不会显示。
+- 图片存储在本地服务器上,也可选择在存在七牛云上.
+参考[https://www.jianshu.com/p/7a2acc3da59e]
 
-flask db upgrade
+参考推荐：[https://blog.csdn.net/kikaylee/article/details/55006262]
+
+
+
 
