@@ -18,5 +18,20 @@ mysql 配置文件卸载secure配置文件中,没有上传需要自己手动创�
 
 限制登录权限
 
-flask 集合Flask-Admin插件
+flask 整合Flask-Admin插件
+
+整合Flask-Migrate
+命令：export FLASK_APP=test.py （选定当前运行为test.py）
+
+初始化
+
+flask db init
+
+迁移
+
+flask db migrate
+
+升级
+
+flask db upgrade
 

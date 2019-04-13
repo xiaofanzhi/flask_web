@@ -13,6 +13,7 @@ wtforms = "*"
 flask-login = "*"
 flask-admin = "*"
 flask-babelex = "*"
+flask-migrate = "*"
 
 [requires]
 python_version = "3.6"

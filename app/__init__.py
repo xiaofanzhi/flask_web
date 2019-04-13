@@ -3,7 +3,7 @@ from flask import Flask
 from app.models.base import db
 from flask_login import LoginManager
 from flask_babelex import Babel
-
+from flask_migrate import Migrate, MigrateCommand
 
 login_manager = LoginManager()
 
@@ -17,6 +17,9 @@ def creat_app():
     # 数据库 插件
     db.init_app(app)
     db.create_all(app=app)
+    migtate = Migrate(app,db)
+    # migtate.add_command('db', MigrateCommand)
+
 
     # login 登录插件初始化
     login_manager.init_app(app)

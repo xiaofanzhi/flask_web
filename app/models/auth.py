@@ -1,5 +1,5 @@
 
-from sqlalchemy import Column,Integer,String
+from sqlalchemy import Column,Integer,String,Text
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash,check_password_hash
 
@@ -11,8 +11,9 @@ from app import login_manager
 class User(UserMixin,Base):
     id = Column(Integer,primary_key=True,autoincrement=True)
     nick_name = Column(String(64),nullable=False)
-    email = Column(String(50), unique=True, nullable=False)
+    email = Column(String(51), unique=True, nullable=False)
     _password = Column('password', String(500))
+    content = Column(Text,nullable=False)
     phone_number = Column(String(18), unique=True)
 
     # admin用
