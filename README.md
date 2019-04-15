@@ -41,6 +41,8 @@ editor.md:[editor.md](https://github.com/pandao/editor.md)Markdown编辑器
 - 最后的回调URL 要注册在web蓝图下面，  @web.route('/image/<name>')
 之前是放在@expose admin下面，图片是不会显示。
 - 图片存储在本地服务器上,也可选择在存在七牛云上.
+应该考虑使用七牛云
+
 参考[https://www.jianshu.com/p/7a2acc3da59e]
 
 参考推荐：[https://blog.csdn.net/kikaylee/article/details/55006262]
